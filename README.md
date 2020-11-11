@@ -2,7 +2,7 @@
 
 ### Basic file structure setup.
 
-1. Create a folder it-logger.
+1. Create a folder it-logger(local).
 
 2. Create a new repository in Github, named 'it-logger-doc'.
 
@@ -19,7 +19,7 @@
     $ git push -u origin main
     ```
 
-4. Add a create-react-app client folder
+4. Add a create-react-app client folder.
 
     ```bash
     $ cd it-logger
@@ -31,6 +31,7 @@
 6. Git push
 
     ```bash
+    $ cd it-logger
     $ git add .
     $ git commit -m'first commit'
     $ git push
