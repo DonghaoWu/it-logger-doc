@@ -1,6 +1,8 @@
 # it-logger-doc
 
-### Basic file structure setup.
+## Basic file structure setup.
+
+---------------------------------------------------------------
 
 1. Create a folder it-logger(local).
 
@@ -26,7 +28,7 @@
     $ npx create-react-app client
     ```
 
-5. Copy the .gitignore file in client, paste it in root directory.
+5. Copy the `.gitignore` file in client, paste it in root directory.
 
 6. Git push
 
