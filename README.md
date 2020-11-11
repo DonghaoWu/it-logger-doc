@@ -2,13 +2,11 @@
 
 ## Basic file structure setup.
 
----------------------------------------------------------------
-
 1. Create a folder it-logger(local).
 
 2. Create a new repository in Github, named 'it-logger-doc'.
 
-3. bash commands
+3. Bash commands
 
     ```bash
     $ cd it-logger
