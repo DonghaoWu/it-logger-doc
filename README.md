@@ -6,7 +6,14 @@
 
 2. Create a new repository in Github, named 'it-logger-doc'.
 
-3. Bash commands
+3. npm initialization.
+
+    ```bash
+    $ cd it-logger
+    $ npm init
+    ```
+
+4. Bash commands
 
     ```bash
     $ cd it-logger
@@ -19,16 +26,16 @@
     $ git push -u origin main
     ```
 
-4. Add a create-react-app client folder.
+5. Add a create-react-app client folder.
 
     ```bash
     $ cd it-logger
     $ npx create-react-app client
     ```
 
-5. Copy the `.gitignore` file in client, paste it in root directory.
+6. Copy the `.gitignore` file in client, paste it in root directory.
 
-6. Git push
+7. Git push
 
     ```bash
     $ cd it-logger

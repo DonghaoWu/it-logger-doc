@@ -1,0 +1,23 @@
+{
+  "name": "it-logger",
+  "version": "1.0.0",
+  "description": "This is a frontend app from udemy tutorial.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonghaoWu/it-logger-doc.git"
+  },
+  "keywords": [
+    "React-Redux",
+    "frontend"
+  ],
+  "author": "Donghao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DonghaoWu/it-logger-doc/issues"
+  },
+  "homepage": "https://github.com/DonghaoWu/it-logger-doc#readme"
+}
