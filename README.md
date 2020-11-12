@@ -43,3 +43,5 @@
     $ git commit -m'first commit'
     $ git push
     ```
+
+8. 注意，不能够先创建 client 后连接 GitHub，顺序必须是先连接 Github 后创建其他。
