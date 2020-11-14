@@ -44,4 +44,4 @@
     $ git push
     ```
 
-8. 注意，不能够先创建 client 后连接 GitHub，顺序必须是先连接 Github 后创建其他。
+8. 注意，不能够先创建 client 后连接 GitHub，顺序必须是创建了 root directory 之后先连接 Github ，然后再做其他。
