@@ -1,6 +1,6 @@
 # it-logger-doc
 
-## Basic file structure setup.
+## Basic files structure setup.
 
 1. Create a folder it-logger(local).
 
