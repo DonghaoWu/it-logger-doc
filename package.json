@@ -4,7 +4,9 @@
   "description": "This is a frontend app from udemy tutorial.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json-server": "json-server --watch db.json --port 5000",
+    "dev": "concurrently \"cd client && npm start\" \"npm run json-server\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/DonghaoWu/it-logger-doc/issues"
   },
-  "homepage": "https://github.com/DonghaoWu/it-logger-doc#readme"
+  "homepage": "https://github.com/DonghaoWu/it-logger-doc#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "json-server": "^0.16.3"
+  }
 }
