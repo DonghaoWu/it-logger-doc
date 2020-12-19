@@ -43,3 +43,5 @@
     ```
 
 8. 注意，不能够先创建 client 后连接 GitHub，顺序必须是创建了 root directory 之后先连接 Github ，然后再做其他。
+
+9. 产生以上表现的原因估计是 npx creact-react-app 自动生成 git 相关文件。
