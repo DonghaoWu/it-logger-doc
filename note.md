@@ -138,3 +138,103 @@ $ npm run dev
 - try out this route in postman:
 
     - GET: `http://localhost:5000/logs`
+
+
+6. 除了 redux 之外的前端设计：
+
+
+7. 关于 materialize-css 的使用：
+
+- import 'materialize-css/dist/css/materialize.min.css';
+- import M from 'materialize-css/dist/js/materialize.min.js';
+
+8. 关于 materialize 的 modal 应用：
+
+  - 在 App 中先行加载 Modal
+  ```js
+  useEffect(() => {
+    M.AutoInit();
+  })
+  ```
+
+  1. 先定义 component 的 ID，如：
+  ```js
+  <div id="add-log-modal" className="modal" style={modalStyle} ></div>
+  ```
+
+  2. 把 component 放在 App.js 里面：
+
+  ```js
+  import AddLogModal from './components/logs/AddLogModal';
+
+  //...
+  return (
+    <Fragment>
+      <SearchBar />
+      <div className='container'>
+        <AddLogModal />
+        <Logs />
+      </div>
+    </Fragment>
+  )
+  ```
+
+  3. 使用 A tag 去调用 modal， 例如：
+
+  ```js
+  <a href="#add-log-modal" className="btn-floating btn-large blue darken-2 modal-trigger">
+    <i className="large material-icons">add</i>
+  </a>
+  ```
+
+  - `注意，className 中必须包含 modal-trigger， 不然的话调用不到 modal。`
+
+  - 相关资料：[https://materializecss.com/modals.html](https://materializecss.com/modals.html)
+
+9. 关于 materialize icon 的使用：
+
+  - 导入库：
+  ```html
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  ```
+
+  - 使用例子：
+
+  ```js
+  <i className="material-icons">close</i>
+
+  <i className="material-icons">search</i>
+
+  <i className="large material-icons">add</i>
+
+  <i className="large material-icons">person</i>
+
+  <i className="large material-icons">person_add</i>
+
+  <i className="material-icons grey-text">delete</i>
+  ```
+
+10. html select option input, checkbox input
+
+11. 注意， materialize 中的 checkbox 有固定格式，如：
+
+  ```js
+    <p>
+      <label>
+          <input type='checkbox' className='filled-in' checked={attention} value={attention}
+              onChange={e => setAttention(!attention)}
+          />
+          <span>Needs Attention</span>
+      </label>
+  </p>
+  ```
+
+  - 一旦删除了其中一个元素可能导致整个 checkbox 不能用，比如删除 label tag，checkbox 就不能用了。
+
+12. Moment 的使用方法：
+
+  ```js
+  import Moment from 'react-moment';
+
+  <Moment format="MMMM Do YYYY, h:mm:ss a">{log.date}</Moment>
+  ```
