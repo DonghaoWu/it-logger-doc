@@ -549,3 +549,49 @@ TechItem.propTypes = {
 
 export default TechItem;
 ```
+
+20. redux
+
+```bash
+$ npm i redux react-redux redux-thunk redux-devtools-extension
+```
+
+21. store, reducers, Provider
+
+22. types, actions.
+
+23. connect, PropTypes, mapStateToProps, mapDispatchToProps
+
+24. action 的定义格式，
+
+```js
+export const getLogs = () => async (dispatch) => {
+    console.log('=====working')
+    try {
+        setLoading();
+        const res = await fetch('/logs');
+        const data = await res.json();
+
+        dispatch({
+            type: GET_LOGS,
+            payload: data
+        })
+    }
+    catch (err) {
+        dispatch({
+            type: LOGS_ERROR,
+            payload: err
+        })
+    }
+}
+
+const mapStateToProps = state => ({
+    log: state.log
+})
+
+const mapDispatchToProps = dispatch => ({
+    getLogs: () => dispatch(getLogs())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Logs);
+```
