@@ -595,3 +595,9 @@ const mapDispatchToProps = dispatch => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(Logs);
 ```
+
+25. M.toast 也很重要。
+
+26. useRef, query get request in json server
+
+27. 

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import M from 'materialize-css/dist/js/materialize.min.js';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-const AddLogModal = () => {
+import M from 'materialize-css/dist/js/materialize.min.js';
+import { addLog } from '../../actions/logActions';
+
+const AddLogModal = ({ addLog }) => {
 
     const [message, setMessage] = useState('');
     const [attention, setAttention] = useState(false);
@@ -12,7 +16,17 @@ const AddLogModal = () => {
             M.toast({ html: 'Please enter a message and tech.' })
         }
         else {
-            console.log(message, attention, tech);
+            const newLog = {
+                message,
+                attention,
+                tech,
+                date: new Date()
+            }
+
+            addLog(newLog);
+
+            M.toast({ html: `Log added by ${tech}.` })
+
             setMessage('');
             setAttention(false);
             setTech('');
@@ -60,7 +74,7 @@ const AddLogModal = () => {
 
 
             <div className='modal-footer'>
-                <a href='#' onClick={onSubmit} className='modal-close waves-effect btn blue'>Enter</a>
+                <a href='#!' onClick={onSubmit} className='modal-close waves-effect btn blue'>Enter</a>
             </div>
         </div>
     )
@@ -71,4 +85,13 @@ const modalStyle = {
     height: '75%'
 }
 
-export default AddLogModal;
+AddLogModal.propTypes = {
+    addLog: PropTypes.func.isRequired,
+}
+
+const mapDispatchToProps = dispatch => ({
+    addLog: (log) => dispatch(addLog(log))
+})
+
+export default connect(null, mapDispatchToProps)(AddLogModal);
+// export default connect(null, { addLog })(AddLogModal);
