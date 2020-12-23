@@ -19,16 +19,16 @@ const initialState = {
 
 const logReducer = (state = initialState, action) => {
     switch (action.type) {
+        case SET_LOADING:
+        return {
+            ...state,
+            loading: true
+        }
         case GET_LOGS:
             return {
                 ...state,
                 logs: action.payload,
                 loading: false
-            }
-        case SET_LOADING:
-            return {
-                ...state,
-                loading: true
             }
         case SET_CURRENT:
             return {
@@ -44,7 +44,7 @@ const logReducer = (state = initialState, action) => {
             return {
                 ...state,
                 error: action.payload,
-                loading: true
+                loading: false
             }
         case ADD_LOG:
             return {

@@ -600,4 +600,24 @@ export default connect(mapStateToProps, mapDispatchToProps)(Logs);
 
 26. useRef, query get request in json server
 
-27. 
+27. 关于 什么时候用 {} 什么时候用 () 的疑惑
+
+```js
+const TechSelectOptions = ({ getTechs, tech }) => {
+    const { loading, techs } = tech;
+    useEffect(() => {
+        getTechs();
+        //eslint-disable-next-line
+    }, [])
+
+    return (
+        (!loading) && (techs !== null) && techs.map(tech =>
+            <option key={tech.id} value={`${tech.firstName} ${tech.lastName}`}>
+                {tech.firstName} {tech.lastName}
+            </option>
+        )
+    )
+}
+```
+
+28. onClick 依然混淆。

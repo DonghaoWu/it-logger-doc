@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { updateLog } from '../../actions/logActions';
+import TechSelectOptions from '../techs/TechSelectOptions';
 
 const EditLogModal = ({ current, updateLog }) => {
 
@@ -54,9 +55,7 @@ const EditLogModal = ({ current, updateLog }) => {
                     <div className="input-field">
                         <select name="tech" value={tech} className='browser-default' onChange={e => setTech(e.target.value)}>
                             <option value='' disabled>Select Techician</option>
-                            <option value='John Doe'>John Doe</option>
-                            <option value='Sam Smith'>Sam Smith</option>
-                            <option value='Marry Jenifer'>Marry Jenifer</option>
+                            <TechSelectOptions />
                         </select>
                     </div>
                 </div>
@@ -98,7 +97,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    updateLog: (newLog) => dispatch(updateLog(newLog))
+    updateLog: (editedLog) => dispatch(updateLog(editedLog))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(EditLogModal);

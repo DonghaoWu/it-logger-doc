@@ -3,9 +3,9 @@
     {
       "id": 1,
       "message": "hello!!!!!coolllll",
-      "attention": false,
-      "tech": "John Doe",
-      "date": "2020-12-22T17:24:28.787Z"
+      "attention": true,
+      "tech": "adsfasdf jjjk",
+      "date": "2020-12-22T18:25:35.213Z"
     },
     {
       "message": "bbb",
@@ -18,7 +18,7 @@
   "techs": [
     {
       "id": 1,
-      "firstName": "John",
+      "firstName": "John kk",
       "lastName": "Doe"
     },
     {
