@@ -621,3 +621,5 @@ const TechSelectOptions = ({ getTechs, tech }) => {
 ```
 
 28. onClick 依然混淆。正确的理解是 onClick 应该连接一个函数名，不带调用的形式。
+
+29. 准备做 IT tracker project。
