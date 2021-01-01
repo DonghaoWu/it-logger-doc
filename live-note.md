@@ -627,3 +627,5 @@ const TechSelectOptions = ({ getTechs, tech }) => {
 30. working on adding a mongoDB to the project. A seperate documentation about adding mongoDB + express backend to a front end application.
 
 31. Working on the Mongo Backend boilerplate.
+
+32. Happy new year 2021!
