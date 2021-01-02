@@ -629,3 +629,5 @@ const TechSelectOptions = ({ getTechs, tech }) => {
 31. Working on the Mongo Backend boilerplate.
 
 32. Happy new year 2021!
+
+33. Solving problems on Leetcode today.
