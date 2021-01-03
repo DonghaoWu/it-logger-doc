@@ -631,3 +631,5 @@ const TechSelectOptions = ({ getTechs, tech }) => {
 32. Happy new year 2021!
 
 33. Solving problems on Leetcode today.
+
+34. Solving problems on Leetcode today. 1/2
