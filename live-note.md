@@ -655,3 +655,5 @@ const TechSelectOptions = ({ getTechs, tech }) => {
 43. Solving problems on Leetcode today. 1/12
 
 44. Solving problems on Leetcode today. 1/13
+
+45. Solving problems on Leetcode today. 1/14
