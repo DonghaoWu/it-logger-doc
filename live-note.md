@@ -693,3 +693,5 @@ const TechSelectOptions = ({ getTechs, tech }) => {
 62. Solved all easy level problems. 1/31
 
 63. Solved 9 medium problems. 2/1
+
+64. Solved 6 medium problems. 2/2
