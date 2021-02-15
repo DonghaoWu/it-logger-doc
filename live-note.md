@@ -717,3 +717,5 @@ const TechSelectOptions = ({ getTechs, tech }) => {
 73. Solved 0 medium problems. 2/12
 
 74. Solved 0 medium problems. 2/13
+
+75. Solved 0 medium problems. 2/14
